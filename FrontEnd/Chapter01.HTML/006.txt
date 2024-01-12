@@ -1,0 +1,8 @@
+HTML 학습 팁!
+
+1. 구글 잘 활용하기
+2. 검색은 영문이 더 유리하다
+3. 공식문서나 튜토리얼 문서를 잘 확인해보기
+https://developer.mozilla.org/ko/docs/Web/HTML/Element
+https://www.w3schools.com/
+4. 배운 것 잘 기록하기
