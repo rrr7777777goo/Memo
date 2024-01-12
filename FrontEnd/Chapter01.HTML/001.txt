@@ -11,4 +11,5 @@ ex)
 </..> : 닫는 태그
 
 <img src="이미지주소" width="300" height="100">
+<input type="text" placeholder="입력하세요">
 이런식으로 콘텐츠가 태그에 포함되어 있는 경우에는 닫는 태그가 없다.
