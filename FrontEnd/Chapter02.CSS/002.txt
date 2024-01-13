@@ -1,0 +1,21 @@
+css 작성 추천 순서
+
+box-sizing
+position
+display
+margin
+padding
+width
+height
+border
+background
+font-size
+font-weight
+color
+text-align
+overflow
+z-index
+
+똑같은 속성을 css에서 재설정할 경우
+밑에 쓴 걸로 최종세팅된다.
+중복작성하지 않도록 주의!!
