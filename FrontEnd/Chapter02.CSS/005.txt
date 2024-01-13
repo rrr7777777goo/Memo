@@ -1,0 +1,18 @@
+<div class="div1">123</div>
+<div class="div2">123</div>
+<div class="div3">123</div>
+
+.div1{
+
+}
+위와 같이 .을 이용해서 특정 클래스를 가지는 것만 css설정을 해줄 수 있다.
+
+display 설정
+block : 기본설정
+inline : 보여지는 부분만큼만 표시되게
+인라인 요소는 태그가 엔터로 띄워져 있으면 서로 간격이 생김
+inline-block : 어느정도 상황에서 자동으로 줄바꿈이 되는 속성
+
+요새는 대부분 flex를 사용함
+
+none을 쓰면 아예 그 항목이 안보인다.
