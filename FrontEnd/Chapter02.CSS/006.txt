@@ -1,0 +1,15 @@
+font-weight
+300(thin)
+400(normal)
+500(medium)
+700(bold)
+900(extra bold)
+
+color : #000 (black)
+
+선택자
+* 전체 (그냥 이거 하나만으로는 잘 사용하지 않음)
+div 요소
+. 클래스
+# 아이디
+[attr] 특성
