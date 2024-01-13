@@ -1,0 +1,25 @@
+box-sizing
+속성 종류
+border-box : border까지 박스 사이즈로
+content-box : content만 박스 사이즈로 (기본 설정)
+
+margin
+border
+padding
+content
+이 순서로 겉에서 안
+
+예시
+
+<div>123</div>
+
+div {
+   box-sizing : border-box;
+   margin: 20px;
+   padding: 24px;
+   border: 10px solid #000;
+   width: 100px;
+   height: 100px;
+   background-color: red;
+}
+border-box로 설정하고 width, height를 설정하면 좀 더 수월하게 크기를 설정해줄 수 있다!
