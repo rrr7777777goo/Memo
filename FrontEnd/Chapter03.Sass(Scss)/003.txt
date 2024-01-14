@@ -10,3 +10,7 @@ p {
 	width: 300px;
 	@include ellipsis;
 }
+
+@mixin은 변수도 받을수 있다!
+
+@mixin abc ($a, $b, $c: 넣고싶은 기본값)
