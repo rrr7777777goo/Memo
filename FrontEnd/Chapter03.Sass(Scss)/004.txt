@@ -1,0 +1,17 @@
+@function: 말 그대로 함수 (@mixin과 차이점이라면 여긴 값을 return 해줌)
+
+<h1>나는 헤더h1</h1>
+
+[html]
+@function half-opacity($color) {
+	$color: rgba($color, .5);
+	@return $color;
+}
+
+[scss]
+h1 {
+	font-size: 10em;
+	text-align: center;
+	color: half-opacity(green);
+	color: rgba(green, 0.5);
+}
