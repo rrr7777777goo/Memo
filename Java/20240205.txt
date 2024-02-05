@@ -123,8 +123,14 @@ System.out.println(a);
 리스트를 초기화 할 때 : 리스트변수이름.clear();
 오름차순 정렬 : 리스트변수이름.sort(Comparator.naturalOrder());
 내림차순 정렬 : 리스트변수이름.sort(Comparator.reverseOrder());
+값 포함여부 확인 : 리스트변수이름.contains(찾으려는값);
 
 맵 : key, value 형태로 데이터를 저장하는 자료형
+값을 넣을 때 : 맵변수이름.put(key값, value값);
+key값을 기준으로 value값을 구할 때 : map.get(key값); (만약 없는 key값이면 null이 출력된다.)
+크기를 구할 때 : 맵변수이름.size();
+데이터를 제거할 때 : 맵변수이름.remove(key값); (제거할 때 해당 value값을 반환한다.)
+존재하는 key값인지 확인할 때 : 맵변수이름.containsKey(key값);
 
 ! 제네릭스 : 자료형을 명시적으로 지정
 제한적일 수 있지만 안정성을 높여주고 형변환을 줄여준다. !
