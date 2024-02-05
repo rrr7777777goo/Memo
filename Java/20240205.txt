@@ -11,3 +11,24 @@
 Java SE(Standard Edition) - 기본 개발 환경
 Java EE(Enterprise Edition) - 서버 기반 프로그램 개발 환경
 Java ME(Micro Edition) - 모바일, 임베디드 시스템 개발 환경
+
+변수
+- 데이터를 저장하는 메모리 공간에 붙여주는 이름
+int age = 20;
+String country = "Korea";
+여기서 age,country가 변수!
+int, String은 변수 타입
+
+변수 이름 규칙
+문자, 숫자, _, $ 사용가능
+변수 이름은 숫자로 시작 안됨
+대소문자 구분
+공백 사용 X
+미리 예약된 이름(true, if, continue 등) 사용 X
+
+변수 이름 표기법
+- 카멜 표기법(가장 앞의 문자는 소문자로, 나머지 단어의 첫문자는 대문자로)
+myName, zeroBase, iPhone 등
+- 파스칼 표기법(각 문자의 첫문자를 대문자로)
+MyName, ZeroBase, IPhone 등
+
