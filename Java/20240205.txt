@@ -43,7 +43,7 @@ soutv라고 쓰면 가장 가까이 위에 있는 변수값을 출력하는 Syst
 변수의 종류, 단위
 숫자(Number) - 숫자 형태의 자료형 (정수, 실수, 2진수, 8진수, 16진수)
 정수 - int, long
-실수 - float, double
+실수 - float, double - float 변수에 값을 넣을 때는 그 값의 맨 끝에 f을 써준다.
 n진수 - int변수에 값 넣을 때 각각 0b(2진수), 0(8진수), 0x(16진수) 이걸 붙여준다.
 부울(참or거짓)(Boolean) - true, false 둘 중 하나의 값을 가지는 자료형
 문자(Character) - 문자('a', 'b', 'c') 형태의 자료형
