@@ -32,3 +32,6 @@ myName, zeroBase, iPhone 등
 - 파스칼 표기법(각 문자의 첫문자를 대문자로)
 MyName, ZeroBase, IPhone 등
 
+인텔리제이 특징
+sout은 System.out.println을 자동완성해준다.
+soutv라고 쓰면 가장 가까이 위에 있는 변수값을 출력하는 System.out.println을 자동완성해준다.
