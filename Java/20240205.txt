@@ -47,7 +47,7 @@ soutv라고 쓰면 가장 가까이 위에 있는 변수값을 출력하는 Syst
 n진수 - int변수에 값 넣을 때 각각 0b(2진수), 0(8진수), 0x(16진수) 이걸 붙여준다.
 부울(참or거짓)(Boolean) - true, false 둘 중 하나의 값을 가지는 자료형
 문자(Character) - 문자('a', 'b', 'c') 형태의 자료형
-문자열(String) - 문자들로 이루어진 문장
+문자열(String) - 문자들로 이루어진 문장(집합)
 
 변수의 종류에 따라 담을 수 있는 데이터의 타입과 크기가 다르다.
 
@@ -56,4 +56,12 @@ int의 최대값 : Integer.MAX_VALUE
 이 값의 범위를 벗어나면 오버플로우가 발생한다! (최대값에 1을 더하면 최소값이 되고 최소값에 1을 빼면 최대값이 된다)
 이런 문제를 해결하려고 할 때는 long을 사용하면 된다.
 long longNum = (long)Integer.MAX_VALUE + 1;
+
+문자열 메소드 : equals, indexOf, replace, substring, toUpperCase
+StringBuffer : 문자열을 자주 추가하거나 변경할 때 사용하는 자료형
+StringBuffer의 메소드 : append, insert, substring
+배열 : 많은 수의 데이터를 담을 수 있는 자료형
+int[] myArr1 = {1, 2, 3, 4, 5};
+char[] myArr2 = {'a', 'b', 'c', 'd', 'e'};
+
 
