@@ -82,7 +82,12 @@ replace
   System.out.println(abc.replace("tt", "vava"));
 이러면 vavavavat라고 출력이된다.
 
-
+substring
+String abc = "abcdefghijklmnopqrstuvwxyz";
+System.out.println(abc.substring(1, 4));
+이러면 bcd라고 출력이 된다.
+인덱스 1이상, 4미만 범위의 문자들을 출력해주기 때문이다.
+(4를 안쓰면 시작점을 기준으로 맨 끝까지 출력해준다.)
 
 StringBuffer : 문자열을 자주 추가하거나 변경할 때 사용하는 자료형
 StringBuffer의 메소드 : append, insert, substring
@@ -90,4 +95,17 @@ StringBuffer의 메소드 : append, insert, substring
 int[] myArr1 = {1, 2, 3, 4, 5};
 char[] myArr2 = {'a', 'b', 'c', 'd', 'e'};
 
+StringBuffer sb1 = new StringBuffer();
+sb1.append("123");
+sb1.append("456");
+System.out.println(sb1);
+123456이라고 출력이 된다.
+
+그냥 String으로도 할 수는 있다.
+String a = "12345";
+String b = "56789";
+a += b;
+System.out.println(a);
+
+다만 메모리의 효율성을 고려하면 이와 같은 작업은 StringBuffer로 하는 것이 좋다.
 
