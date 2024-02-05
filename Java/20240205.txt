@@ -32,6 +32,8 @@ int, String은 변수 타입
 myName, zeroBase, iPhone 등
 - 파스칼 표기법(각 문자의 첫문자를 대문자로) - [클래스]
 MyName, ZeroBase, IPhone 등
+- 스네이크 표기법 (snake_case) - [자바에선 잘 사용안함]
+my_age, a_b_c
 
 인텔리제이 특징
 sout은 System.out.println을 자동완성해준다.
