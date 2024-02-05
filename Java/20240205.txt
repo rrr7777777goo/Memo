@@ -3,3 +3,11 @@
 - 객차 지향적 (절차 지향적 언어에 비해 생산성이 높고 보안성이 높다)
 
 자바 소스 코드(.java) => 자바 컴파일러 => 바이트 코드(.class) => 윈도우 JVM or 리눅스 JVM
+
+자바 활용도
+웹 애플리케이션, 모바일 ..., 엔터프라이즈 ..., 웹/앱 서버 등
+
+자바 플랫폼
+Java SE(Standard Edition) - 기본 개발 환경
+Java EE(Enterprise Edition) - 서버 기반 프로그램 개발 환경
+Java ME(Micro Edition) - 모바일, 임베디드 시스템 개발 환경
