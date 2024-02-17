@@ -11,3 +11,89 @@ class Outer {
 - 지역 클래스
 - 익명 클래스 : 이름을 가지지 않고 선언과 동시에 객체가 생성되고 일회용인 클래스
 => 클래스 이름 참조변수 이름 = new 클래스 이름 () {};
+
+자바에서 콘솔 입력 방법
+System.in.read(); <= 입력한 것 중 첫번째 문자만 읽어옴 (이걸 쓸 때는 함수에 throws IOException 을 써준다. )
+위의 명령어를 쓰고 나서는
+System.in.read(new byte[System.in.available()]); <= 이걸 써줘야 남은 문자들이 사라진다.
+
+InputStreamReader reader = new InputStreamReader(System.in);
+char[] c = new char[3];
+reader.read(c); // 배열 c의 길이만큼 문자를 가져온다.
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 백준 같은 곳에서 코테 풀 때 추천되는 방식
+br.readLine();
+
+Scanner sc = new Scanner(System.in); // 제일 보편적으로 많이 쓰이는 방식
+sc.next(); 
+sc.nextInt();
+위의 2개는 쓰고 난 후에 남은 문자를 제거하기 위해 밑의 nexLine()을 꼭 한 번 써줘야 한다다.
+sc.nextLine();
+
+자바에서 콘솔 출력 방법
+System.out.println(); // 개행문자 포함
+System.out.print(); // 개행문자 미포함
+System.out.printf(); // %d, %f 같은 것을 쓸 수 있다.
+// 아래의 명령어들로 출력결과 한번씩 확인해보면 좋다.
+System.out.printf("%d\n", 10);
+System.out.printf("%o\n", 10);
+System.out.printf("%x\n", 10);
+
+System.out.printf("%f\n", 5.2f);
+
+System.out.printf("%c\n", 'A');
+System.out.printf("%s\n", "안녕하세요");
+
+System.out.printf("%-5d\n", 123);
+System.out.printf("%5d\n", 124);
+System.out.printf("%5d\n", 12345);
+
+System.out.printf("%.2f\n", 1.12345123f);
+
+정수를 문자열로
+Integer.toString();
+문자열을 정수로
+Integer.parseInt();
+
+파일 쓰기 : FileWriter, PrintWriter
+
+FileWriter fw = new FileWriter("./memo.txt");
+String memo = "헤드 라인\n";
+fw.write(memo);
+
+memo = "1월 1일 날씨 맑음\n";
+fw.write(memo);
+fw.close(); // 꼭 해주기!
+
+PrintWriter pw = new PrintWriter("./memo.txt");
+memo = "헤드 라인";
+pw.println(memo);
+
+memo = "1월 1일";
+pw.println(memo);
+
+pw.close();
+
+파일 이어 쓰기
+FileWriter fw2 = new FileWriter("./memo.txt", true);
+fw2.write(memo);
+fw2.close();
+
+PrintWriter pw2 = new PrintWriter(new FileWriter("./memo.txt", true));
+memo = "이어 쓰는 중";
+pw2.println(memo);
+pw2.close();
+pw2.close();
+
+파일 입력
+BufferedReader br = new BufferedReader(new FileReader("./memo.txt"));
+
+while(true) {
+   String line = br.readLine();
+
+   if(line == null) {
+       break;
+   }
+
+    System.out.println(line);
+}
