@@ -97,3 +97,43 @@ while(true) {
 
     System.out.println(line);
 }
+
+예외 - 정상적이지 안은 case
+0으로 나누기
+배열의 인덱스 초과
+없는 파일 열기
+...
+예외 처리 - 정상적이지 않은 Case에 대한 적절한 처리 방법
+try {
+
+} catch (예외 case 1) {
+
+} catch (예외 case 2) {
+
+}
+
+int a = 0;
+
+try {
+   a = 5 / 0;
+} catch (ArithmeticException e) {
+   System.out.println(e);
+} finally { // 예외 발생 여부와 관계없이 항상 실행되는 부분
+
+}
+
+throw : 예외를 발생시킴
+throws : 예외를 전가시킴
+
+... 함수이름() {
+   throw new Exception();
+}
+... 함수이름() throws Exception {
+   ...
+}
+
+컬렉션 프레임워크
+- 여러 데이터를 편리하게 관리할 수 있게 만들어 놓은 것
+=> 자료구조 및 알고리즘을 구조화
+대표 인터페이스
+List 인터페이스, Set 인터페이스, Map 인터페이스 ...
